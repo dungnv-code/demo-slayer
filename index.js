@@ -21,7 +21,7 @@ app.get('/v1', (req, res) => {
                     const img = $(this).find("a > img").attr("data-src");
                     const link = $(this).find("a").attr("href");
 
-                    list.push({ name: name, img: img, http: `http://localhost:3000/v1/${link.split("wiki/")[1]}` });
+                    list.push({ name: name, img: img, http: `https://demon-slayer-api-z3jl.onrender.com/v1/${link.split("wiki/")[1]}` });
                 })
 
                 res.json(list);
